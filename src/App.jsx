@@ -1,6 +1,6 @@
 import React from "react";
 import SignUp from "./pages/SingUp.jsx";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { Login } from "./pages/Login.jsx";
 import { AllTasks } from "./pages/AllTasks.jsx";
 import { Toaster } from "sonner";
@@ -20,6 +20,8 @@ const App = () => {
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/tasks" element={<AllTasks />} />
+        {/* Redirect unknown URLs */}
+        <Route path="*" element={<Navigate to="/signUp" replace />} />
       </Routes>
     </>
   );
