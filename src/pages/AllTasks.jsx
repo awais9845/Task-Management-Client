@@ -314,7 +314,7 @@ export const AllTasks = () => {
 
             <button
               onClick={handleLogout}
-              className="flex h-9 w-20 items-center justify-center rounded-xl border border-violet-400/20 bg-violet-400/10 text-sm font-semibold text-violet-200 transition hover:bg-violet-400/20"
+              className="flex cursor-pointer h-9 w-20 items-center justify-center rounded-xl border border-violet-400/20 bg-violet-400/10 text-sm font-semibold text-violet-200 transition hover:bg-violet-400/20"
             >
               Log Out
             </button>
