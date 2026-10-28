@@ -243,7 +243,7 @@ export const AllTasks = () => {
   const handleLogout = async () => {
     try {
       await Axios.post("/auth/logout", {}, { withCredentials: true });
-
+      toast.success("Logged out successfully! 👋");
       navigate("/login");
     } catch (error) {
       console.error("Logout failed:", error);
